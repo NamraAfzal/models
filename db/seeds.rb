@@ -7,3 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Student.all.each do |student|
+  student.blogs.create(title: "Dummy Blog foor Student #{
+    student.id}", content: "Custom content pending")
+  student.blogs.create(title: "Dummy Blog foor Student #{
+    student.id}", content: "Custom content pending")
+end
+
+Course.create(name: "Ruby on rails", description: "pending")
+Course.create(name: "React Js", description: "pending")
+Course.create(name: "Angular", description: "pending")
+Course.create(name: "Node Js", description: "pending")
+Course.create(name: "Java", description: "pending")
+Course.create(name: "python", description: "pending")
