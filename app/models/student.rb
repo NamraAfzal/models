@@ -4,6 +4,20 @@ class Student < ApplicationRecord
   has_many :student_projects
   has_many :projects, through: :student_projects
   validates :name, :gmail, presence: true
+
+  # validates :expiration_date_cannot_be_in_the_past,
+  #    :discount_cannot_be_greater_than_total_value
+  # def expiration_date_cannot_be_in_the_past
+  #   if expiration_date.present? && expiration_date < Date.today
+  #     errors.add(:expiration_date, "can't in the past")
+  #   end
+  # end
+  # def discount_cannot_be_greater_than_total_value
+  #   if discount > total_value
+  #     errors.add(:discount, "can't be greater than the total value")
+  #   end
+  # end
+
   # validates :term_of_service, acceptance: {accept: 'yes'}
   # validates :eula, acceptance: {accept: ['TRUE', 'accepted']}
   # validates :email, confirmation: true

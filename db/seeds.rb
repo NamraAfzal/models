@@ -21,3 +21,16 @@ Course.create(name: "Angular", description: "pending")
 Course.create(name: "Node Js", description: "pending")
 Course.create(name: "Java", description: "pending")
 Course.create(name: "python", description: "pending")
+Course.create(name: "kafka", description: "pending")
+# student = Student.create(
+#   name: "mike",
+#   email: "mike@gmail.com",
+#  )
+
+20.times do |i|
+  puts "Creating students #{i+1}"
+  Course.create(
+    name: "course #{i+1}",
+    description: "pending #{i+1}"
+  )
+end
