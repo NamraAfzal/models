@@ -18,6 +18,7 @@ class Student < ApplicationRecord
   # validates :password, length: {in: 5..25}
   # validates :registration_number, length: {is: 9}
   # validates :points, numerically: true
+  val
 
   # //////////
 
