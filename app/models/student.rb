@@ -5,7 +5,7 @@ class Student < ApplicationRecord
   has_many :projects, through: :student_projects
   validates :name, :gmail, presence: true
 
-  # validates :expiration_date_cannot_be_in_the_past,
+  # validate :expiration_date_cannot_be_in_the_past,
   #    :discount_cannot_be_greater_than_total_value
   # def expiration_date_cannot_be_in_the_past
   #   if expiration_date.present? && expiration_date < Date.today
