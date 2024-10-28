@@ -65,4 +65,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-bundle add devise
+gem "devise", "~> 4.9"
