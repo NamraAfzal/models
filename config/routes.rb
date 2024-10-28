@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
   # get 'home/index'
   devise_for :admin_users
-     resources :projects
+      resources :projects
         get 'projects/about'
-        root 'projects#index'
+        root 'home#index'
+
+
+      namespace :admin do
+        resources :projects
+      end
+
+
+
   # devise_scope :admin_users do
     #  get '/admin_users/sign_out' => 'devise/sessions#destroy'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
