@@ -3,7 +3,6 @@
   <p><%= notice %></p>
   
 <h1>Projects</h1>
-
 <table class="table table-striped table-bordered table-hover">
   <thead class="thead-dark">
     <tr>
@@ -30,7 +29,10 @@
     <% end %>
   </div>
 </table>
+</br>
+<%= paginate @projects %>
 
 <%= link_to "New project", new_project_path %>
 </div>
+
 
